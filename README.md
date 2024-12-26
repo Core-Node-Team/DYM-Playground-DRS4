@@ -7,6 +7,7 @@
 ```
 rollappd keys add cüzdan-adi-yaz --keyring-backend test
 ```
+👉❗NOT:cüzdan adresinize keplr den kendi ağınızdan bu adrese coin yollayın 1000 dane falan
 👉❗NOT: chain idnizi değiştirin
 ```
 rollappd init molla202 --chain-id=gokhanmolla_899158-1
