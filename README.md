@@ -87,6 +87,7 @@ rollappd query gov proposals
 rollappd tx gov vote 1 yes --from molla202 --keyring-backend test --fees 4000000000000amll --gas auto --gas-adjustment 1.3 --chain-id rollapp-ağ-adı -b block
 ```
 👉❗NOT: aşağıdaki kodla tekrar bakalım oylama geçmişmi biraz zamn alır malum geçince bele göstericek
+👉❗NOT: eğer oylamalar geçmıyorsa rollap kurarkene sequancer kelimeleri import edip o cüzdanla oy kullanın. `rollappd keys add sequancer --keyring-backend test --recover` unutmayın sequancerle kullanacaksanız sequancer diye yazıcaksınız cüzdan adını --from kısmına
 ```
 rollappd query gov proposals
 ```
