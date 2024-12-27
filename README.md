@@ -7,7 +7,6 @@
 ```
 rollappd keys add cüzdan-adi-yaz --keyring-backend test
 ```
-👉❗NOT:cüzdan adresinize keplr den kendi ağınızdan bu adrese coin yollayın 1000 dane falan
 👉❗NOT: chain idnizi değiştirin
 ```
 rollappd init molla202 --chain-id=gokhanmolla_899158-1
@@ -76,7 +75,7 @@ nano proposal.json
 
 👉❗NOT: --from kısmındaki 🌟molla202 yerine olusturduğunuz cüzdan adını yazınız. aynı zamanda `coin sembolünüde` değiştiriniz. ❗rollapp-ağ-adı da yazınız
 ```
-rollappd tx gov submit-proposal proposal.json --from molla202 --keyring-backend test --fees 2000000000000amll --gas auto --gas-adjustment 1.3 --chain-id rollapp-ağ-adı -b block
+rollappd tx gov submit-proposal proposal.json --from molla202 --keyring-backend test --fees 4000000000000amll --gas auto --gas-adjustment 1.3 --chain-id rollapp-ağ-adı -b block
 ```
 👉❗NOT: şimdi oluşturduğumuz oylamaya bakalım. id öğrenelim daha önce oluşturmadıysak 1 dir de yinede hata alırız bişi olur son proposal id öğrenmekte fayda var.
 ```
@@ -85,7 +84,7 @@ rollappd query gov proposals
 #### GOV Vote
 👉❗NOT: aynı zamanda sitedende göruncek bu oylama ordanda `deploy ettiğiniz cüzdanlada oy kullanırsınız` extradan.görunürse tabi.
 ```
-rollappd tx gov vote 1 yes --from molla202 --keyring-backend test --fees 2000000000000amll --gas auto --gas-adjustment 1.3 --chain-id rollapp-ağ-adı -b block
+rollappd tx gov vote 1 yes --from molla202 --keyring-backend test --fees 4000000000000amll --gas auto --gas-adjustment 1.3 --chain-id rollapp-ağ-adı -b block
 ```
 👉❗NOT: aşağıdaki kodla tekrar bakalım oylama geçmişmi biraz zamn alır malum geçince bele göstericek
 ```
@@ -115,10 +114,7 @@ roller rollapp migrate
 
 ![image](https://github.com/user-attachments/assets/f589502e-4255-43de-b194-738395f84cdc)
 
-bakalım ne olmuş.
-```
-rollappd q rollappparams params
-```
+
 
 ![image](https://github.com/user-attachments/assets/e80ba421-52dc-45d4-8848-42dfe89e9e4f)
 
@@ -127,7 +123,10 @@ rollappd q rollappparams params
 roller rollapp services start
 ```
 
-
+👉bakalım ne olmuş.
+```
+rollappd q rollappparams params
+```
 
 
 
